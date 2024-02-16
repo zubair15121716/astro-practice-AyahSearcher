@@ -18,8 +18,7 @@ import Header from '../../components/Header.astro';
 		document.querySelector("#surahName").innerText = data.data.englishName;
 		document.querySelector("#surahTranslation").innerText = data.data.englishNameTranslation;
         const surahs = data.data.ayahs.map((s)=>s.text);
-        document.querySelector("#ayahText").innerText = `${surahs.join("۝
-        ")}`;
+        document.querySelector("#ayahText").innerText = `${surahs.join("۝")}`;
         document.querySelector("#surahName0").innerText = data.data.englishName;
 	  }catch{
 		document.querySelector("#warning").innerText = "Please Enter Valid Number";
